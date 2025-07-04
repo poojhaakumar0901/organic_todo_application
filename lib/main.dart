@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Organic Mind',
-      initialRoute: '',
       theme: AppTheme.lightTheme, 
     );
   }
