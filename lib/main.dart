@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_application/config/theme.dart';
+import 'screens/onboarding_screen.dart';
 
 
 void main() {
@@ -15,8 +15,11 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Organic Mind',
-      initialRoute: '',
-      theme: AppTheme.lightTheme, 
+      initialRoute: '/onboarding',
+      getPages: [
+        GetPage(name: '/onboarding', page: () => const OnboardingScreen()),
+      ],
+      theme: ThemeData.light(),
     );
   }
 }
