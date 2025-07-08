@@ -5,4 +5,12 @@ class AppString {
   static const String getStarted = "Get Started";
   static const String getStartedDialog = "Already have an account?";
   static const String signIn = "Sign in"; 
+  static const String signInTitle = "Sign in";
+  static const String emailHintText = "Enter the email";
+  static const String passwordHintText ="Enter your password";
+  static const String or = "or";
+  static const String google = "Google";
+  static const String facebook = "Facebook";
+  static const String signUpPrompt = "Don’t have an account? ";
+  static const String signUpAction = "Sign up here";
 }

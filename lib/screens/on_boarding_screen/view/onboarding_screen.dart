@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../constant/strings.dart';
-import '../utils/theme/text_styles.dart';
-import '../widgets/button.dart';
+import 'package:get/get.dart';
+import '../../../constant/strings.dart';
+import '../../../utils/text_styles.dart';
+import '../../../widgets/button.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -46,6 +47,7 @@ class OnboardingScreen extends StatelessWidget {
 
               CommonButton(
                 onPressed: () {
+                  Get.toNamed('/signin');
                 },
                 label: AppString.getStarted,
               ),

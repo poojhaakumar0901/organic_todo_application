@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../utils/theme/text_styles.dart';
+import '../../utils/text_styles.dart';
 
 class CommonButton extends StatelessWidget {
   final VoidCallback onPressed;
