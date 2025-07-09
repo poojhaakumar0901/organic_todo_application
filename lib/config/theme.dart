@@ -1,43 +1,35 @@
-import 'package:flutter/material.dart';
-import '../utils/theme/text_styles.dart'; 
+import "package:flutter/material.dart";
+import "../utils/theme/text_styles.dart";
 
 class AppTheme {
-  static ThemeData lightTheme = ThemeData(
+  const AppTheme._();
+
+  static final ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
-    primarySwatch: Colors.deepPurple,
     scaffoldBackgroundColor: Colors.white,
-    appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.deepPurple,
-      foregroundColor: Colors.white,
-      elevation: 0,
-    ),
+    colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFFFD233)),
+    useMaterial3: true,
     textTheme: const TextTheme(
       headlineSmall: AppTextStyles.headlineSmall,
       bodyMedium: AppTextStyles.bodyMedium,
     ),
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.deepPurple,
-        foregroundColor: Colors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-        ),
-      ),
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.white,
+      foregroundColor: Colors.black,
+      elevation: 0,
     ),
   );
 
-  static ThemeData darkTheme = ThemeData(
+  static final ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
-    primarySwatch: Colors.deepPurple,
     scaffoldBackgroundColor: Colors.black,
-    appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.black,
-      foregroundColor: Colors.white,
-      elevation: 0,
-    ),
     textTheme: const TextTheme(
       headlineSmall: AppTextStyles.headlineSmallDark,
       bodyMedium: AppTextStyles.bodyMediumDark,
+    ),
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.black,
+      foregroundColor: Colors.white,
     ),
   );
 }
